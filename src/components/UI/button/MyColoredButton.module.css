@@ -1,0 +1,19 @@
+.myColoredButton {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #61dafb;
+    background-color: #61dafb;
+    color: white;
+    font-weight: bold;
+}
+
+.myColoredButton:disabled {
+    cursor: not-allowed;
+    border-color: #a5e4ff;
+    background-color: #a5e4ff;
+}
+
+.myColoredButton:not(:disabled):hover {
+    cursor: pointer;
+    /*border-color: #61dafb;*/
+}

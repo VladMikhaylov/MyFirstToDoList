@@ -1,0 +1,43 @@
+.myDatePicker {
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(40,44,52,0.2);
+    background-color: transparent;
+}
+
+/* create a new arrow, because we are going to mess up the native one
+see "List of symbols" below if you want another, you could also try to add a font-awesome icon.. */
+.myDatePicker:after {
+    content: "\25BC";
+    color: #555;
+    padding: 0 5px;
+}
+
+/* change color of symbol on hover */
+.myDatePicker:hover:after {
+    color: #61dafb;
+}
+
+/* make the native arrow invisible and stretch it over the whole field so you can click anywhere in the input field to trigger the native datepicker*/
+.myDatePicker::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+}
+
+/* adjust increase/decrease button */
+.myDatePicker::-webkit-inner-spin-button {
+    z-index: 1;
+}
+
+/* adjust clear button */
+.myDatePicker::-webkit-clear-button {
+    z-index: 1;
+}

@@ -1,0 +1,33 @@
+.myDatebox {
+    --default-color: #777777;
+    --today-color: #339900;
+    --late-color: #cc2200;
+
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.myDatebox.default>p {
+    color: var(--default-color);
+}
+
+.myDatebox.default>svg>path {
+    fill: var(--default-color);
+}
+
+.myDatebox.today>p {
+    color: var(--today-color);
+}
+
+.myDatebox.today>svg>path {
+    fill: var(--today-color);
+}
+
+.myDatebox.late>p {
+    color: var(--late-color);
+}
+
+.myDatebox.late>svg>path {
+    fill: var(--late-color);
+}
